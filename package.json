@@ -5,7 +5,7 @@
   "main": "dist/foo.min.js",
   "scripts": {
     "build:lib": "npm run build:lib:src && npm run uglify:lib:src",
-    "build:lib:src": "browserify --node --no-bundle-external --standalone Foo -t [ babelify --presets [ @babel/preset-env] ] lib/index.js -o dist/foo.js",
+    "build:lib:src": "browserify --node --no-bundle-external --standalone Foo -t [ babelify --presets [ @babel/preset-env] --plugins [ @babel/plugin-transform-runtime ] ] lib/index.js -o dist/foo.js",
     "uglify:lib:src": "uglifyjs dist/foo.js -cmo dist/foo.min.js",
     "dev": "next dev",
     "build": "next build",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@babel/core": "~7.12.9",
+    "@babel/plugin-transform-runtime": "~7.12.1",
     "@babel/preset-env": "~7.12.7",
     "babelify": "~10.0.0",
     "browserify": "~17.0.0",
