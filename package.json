@@ -8,14 +8,14 @@
     "uglify:lib:src": "uglifyjs dist/foo.js -cmo dist/foo.min.js",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "foomin": "github:talmobi/vercel-next-uglify-test#lib/minified",
-    "foo": "github:talmobi/vercel-next-uglify-test#lib/non-minified"
+    "start": "next start"
   },
   "dependencies": {
     "next": "10.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "foomin": "github:talmobi/vercel-next-uglify-test#lib/minified",
+    "foo": "github:talmobi/vercel-next-uglify-test#lib/non-minified"
   },
   "devDependencies": {
     "@babel/core": "~7.12.9",
