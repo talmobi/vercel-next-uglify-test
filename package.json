@@ -9,7 +9,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "foo": "github:talmobi/vercel-next-uglify-test#libs"
+    "foomin": "github:talmobi/vercel-next-uglify-test#lib/minified",
+    "foo": "github:talmobi/vercel-next-uglify-test#lib/non-minified"
   },
   "dependencies": {
     "next": "10.0.0",

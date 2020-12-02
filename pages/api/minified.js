@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-const foo = require( '../../dist/foo.min.js' )
+const foo = require( 'foomin' )
 
 export default (req, res) => {
   res.statusCode = 200
