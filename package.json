@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build:lib": "npm run build:lib:src && npm run uglify:lib:src",
+    "build:lib:src": "browserify --node --no-bundle-external --standalone Foo -t [ babelify --presets [ @babel/preset-env] ] lib/index.js -o dist/foo.js",
+    "uglify:lib:src": "uglifyjs dist/foo.js -cmo dist/foo.min.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -11,5 +14,12 @@
     "next": "10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.12.9",
+    "@babel/preset-env": "~7.12.7",
+    "babelify": "~10.0.0",
+    "browserify": "~17.0.0",
+    "uglify-js": "~3.12.1"
   }
 }
