@@ -2,6 +2,7 @@
   "name": "nextjs",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/foo.js",
   "scripts": {
     "build:lib": "npm run build:lib:src && npm run uglify:lib:src",
     "build:lib:src": "browserify --node --no-bundle-external --standalone Foo -t [ babelify --presets [ @babel/preset-env] ] lib/index.js -o dist/foo.js",
