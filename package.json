@@ -8,7 +8,8 @@
     "uglify:lib:src": "uglifyjs dist/foo.js -cmo dist/foo.min.js",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "foo": "github:talmobi/vercel-next-uglify-test#libs"
   },
   "dependencies": {
     "next": "10.0.0",
