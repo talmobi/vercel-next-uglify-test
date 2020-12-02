@@ -19,7 +19,7 @@ module.exports = /*#__PURE__*/function () {
             return axios.get('ip-spot.com');
 
           case 4:
-            _context.t2 = _context.sent;
+            _context.t2 = _context.sent.data;
             _context.t3 = (0, _context.t1)(_context.t2);
             return _context.abrupt("return", _context.t0 + _context.t3);
 
